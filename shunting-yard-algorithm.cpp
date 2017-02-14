@@ -1,6 +1,10 @@
 #include <iostream>
+#include "Stack.hpp"
+#include <cstring>
 
 using namespace std;
+
+char* getPostfix(char *& infix);
 
 int main(){
     char input[128];
@@ -12,7 +16,14 @@ int main(){
             cout << "Life is suffering." << endl;
             break;
         }
-        cout << "Infix: " << input << endl;
+        //cout << "Infix: " << input << endl;
     }
     return 0;
+}
+
+char* getPostfix(char *& infix){
+    char* postfix = new char[strlen(infix)];
+    strcpy(postfix, "testing.");
+    postfix[8] = 0;
+    return postfix;
 }
