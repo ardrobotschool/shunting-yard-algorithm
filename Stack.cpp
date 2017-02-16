@@ -6,19 +6,21 @@ char Stack::peek(){
 }
 
 void Stack::push(char token){
-    Node newNode;
-    newNode.next = head;
-    newNode.token = token;
-    head = &newNode;
+    Node* newNode = new Node();
+    newNode->next = head;
+    newNode->token = token;
+    head = newNode;
 }
 
 char Stack::pop(){
     if(head != NULL){
         char temp = head->token;
+        Node* top = head;
         head = head->next;
+        delete top;
         return temp;
     }
     else{
-        return '\0';
+        return 0;
     }
 }
