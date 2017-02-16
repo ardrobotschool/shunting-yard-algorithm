@@ -1,3 +1,4 @@
+//Stack class that uses a linked list internally; the head is the top of the stack.
 #include <iostream>
 #pragma once
 

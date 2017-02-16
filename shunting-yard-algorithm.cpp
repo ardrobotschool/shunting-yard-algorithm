@@ -1,3 +1,9 @@
+/*
+ * A program that converts an infix expression into a postfix expression.
+ * Supports multi-digit numbers, +, -, *, /, ^, and parentheses.
+ * Author: Artur Drobot
+ * Feb. 2017
+ */
 #include <iostream>
 #include "Stack.hpp"
 #include <cstring>
